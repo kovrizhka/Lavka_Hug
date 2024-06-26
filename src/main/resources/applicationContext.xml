@@ -7,11 +7,8 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id = "postcard"
-          class="spring_start.Postcard">
+    <bean id = "souvenir"
+          class="spring_start.KnittedToy">
     </bean>
 
-    <bean id = "toy"
-          class = "spring_start.KnittedToy">
-    </bean>
 </beans>

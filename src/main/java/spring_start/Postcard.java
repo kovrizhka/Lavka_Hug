@@ -1,6 +1,6 @@
 package spring_start;
 
-public class Postcard implements TheMessage {
+public class Postcard implements Souvenir {
 
     @Override
     public void makeHappy() {

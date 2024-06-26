@@ -1,8 +1,8 @@
 package spring_start;
 
-public class KnittedToy implements TheMessage{
+public class KnittedToy implements Souvenir {
     @Override
     public void makeHappy() {
-        System.out.println("Я мягкая и я радую!!!");
+        System.out.println("Я мягкая и я радую чебурека!!!");
     }
 }

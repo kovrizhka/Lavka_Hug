@@ -1,5 +1,5 @@
 package spring_start;
 
-public interface TheMessage {
+public interface Souvenir {
     void makeHappy();
 }
