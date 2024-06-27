@@ -8,9 +8,7 @@ public class TestXML {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
-        Souvenir souvenir = context.getBean("souvenir", Souvenir.class);
-
-        ShoppingCart cart = new ShoppingCart(souvenir);
+        ShoppingCart cart = context.getBean("cart", ShoppingCart.class);
         cart.buySouvenir();
 
         context.close();
