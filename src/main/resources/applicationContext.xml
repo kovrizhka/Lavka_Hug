@@ -8,12 +8,13 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean id = "souvenir"
-          class="spring_start.Postcard">
+          class="spring_start.KnittedToy">
     </bean>
 
     <bean id = "cart"
           class="spring_start.ShoppingCart">
-        <constructor-arg ref="souvenir"/>
+<!--        <constructor-arg ref="souvenir"/>-->
+        <property name="souvenir" ref="souvenir"/>
     </bean>
 
 
