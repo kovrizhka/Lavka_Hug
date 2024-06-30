@@ -10,6 +10,8 @@ public class TestXML {
 
         ShoppingCart cart = context.getBean("cart", ShoppingCart.class);
         cart.buySouvenir();
+        System.out.println(cart.getTitle());
+        System.out.println(cart.getId());
 
         context.close();
     }
