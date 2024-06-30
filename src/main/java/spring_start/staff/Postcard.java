@@ -1,5 +1,8 @@
-package spring_start;
+package spring_start.staff;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Postcard implements Souvenir {
 
     @Override

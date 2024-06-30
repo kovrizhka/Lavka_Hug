@@ -1,4 +1,4 @@
-package spring_start;
+package spring_start.staff;
 
 public interface Souvenir {
     void makeHappy();

@@ -7,21 +7,6 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:property-placeholder location="classpath:application.properties"/>
-
-    <bean id = "souvenir"
-          class="spring_start.staff.KnittedToy">
-    </bean>
-
-    <bean id = "cart"
-          class="spring_start.ShoppingCart">
-<!--        <constructor-arg ref="souvenir"/>-->
-        <property name="souvenir" ref="souvenir"/>
-
-        <property name="title" value="${shoppingCart.title}"/>
-        <property name="id" value="${shoppingCart.id}"/>
-    </bean>
-
-
+<context:component-scan base-package="spring_start"/>
 
 </beans>
