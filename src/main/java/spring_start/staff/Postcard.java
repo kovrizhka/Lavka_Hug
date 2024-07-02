@@ -2,7 +2,7 @@ package spring_start.staff;
 
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component("postcard")
 public class Postcard implements Souvenir {
 
     @Override

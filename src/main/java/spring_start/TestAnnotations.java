@@ -7,8 +7,11 @@ public class TestAnnotations {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContextComponentScan.xml");
 
-        Souvenir souvenir = context.getBean("knittedToy", Souvenir.class);
-        souvenir.makeHappy();
+        ShoppingCart shoppingCart = context.getBean("shoppingCart", ShoppingCart.class);
+        shoppingCart.buySouvenir();
+
+//        Souvenir souvenir = context.getBean("knittedToy", Souvenir.class);
+//        souvenir.makeHappy();
 
         context.close();
     }

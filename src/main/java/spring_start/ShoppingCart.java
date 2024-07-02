@@ -1,10 +1,13 @@
 package spring_start;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import spring_start.staff.Souvenir;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class ShoppingCart {
 
     private int id;
@@ -14,16 +17,18 @@ public class ShoppingCart {
     //todo подумать над типом даты
 //    private Date creationDate;
 
-    private final List<Souvenir> souvenirList;
+    private final List<Souvenir> souvenirList = new ArrayList<>();
 
-//    public ShoppingCart(Souvenir souvenir) {
-//        this.souvenir = souvenir;
-//    }
-
-    public ShoppingCart() {
-        souvenirList = new ArrayList<>();
-        System.out.println("ShoppingCart создана!");
+    @Autowired
+    public ShoppingCart(Souvenir souvenir) {
+//        souvenirList = new ArrayList<>();
+        setSouvenir(souvenir);
     }
+
+//    public ShoppingCart() {
+////        souvenirList = new ArrayList<>();
+//        System.out.println("ShoppingCart создана!");
+//    }
 
     public void buySouvenir() {
         System.out.println("Покупаю!");

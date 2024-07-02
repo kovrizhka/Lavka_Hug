@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
 
-@Component
+@Component("sticker")
 public class Sticker implements Souvenir {
 
     public Sticker() {

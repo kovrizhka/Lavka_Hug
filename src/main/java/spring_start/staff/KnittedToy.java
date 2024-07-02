@@ -2,7 +2,7 @@ package spring_start.staff;
 
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component("toy")
 public class KnittedToy implements Souvenir {
 
     public KnittedToy() {
